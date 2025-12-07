@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+; Remove old entries
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.epub\shell\ConvertToCBZ]
+
+; Add new entries for proper multi-file handling
+[HKEY_CLASSES_ROOT\.epub\shell\ConvertToCBZ]
+@="Convert EPUB to CBZ"
+"MultiSelectModel"="Player"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.epub\shell\ConvertToCBZ\command]
+; %* passes all selected files to the script
+@="\"C:\\Users\\Example\\Folder\\To\\Script\\ComicEpubToCBZ.bat\" %*"
+
+; INSTEAD Create a shortcut to your .ps1 or .bat in the shell:sendto folder. This reliably passes all selected files as arguments to a single process.
