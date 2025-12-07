@@ -26,7 +26,7 @@ The script:
 3. **Extracts Images**: Finds all XHTML content files and uses regex to extract image references from both standard HTML `<img>` tags and SVG `<image>` elements
 4. **Detects Duplicates**: Compares the MD5 hash of the first content page against the extracted cover image to skip duplicate covers (common when publishers include cover in both cover and content sections)
 5. **Orders Pages**: Renames extracted images with sequential numbering based on spine order to ensure correct reading sequence
-6. **Generates Metadata**: Creates ComicInfo.xml with EPUB metadata for better comic reader integration
+6. **(WIP) Generates Metadata**: Creates ComicInfo.xml with EPUB metadata for better comic reader integration. Not fully functional
 7. **Creates CBZ**: Packages all ordered images into a standard CBZ format
 
 ## Important Notes
