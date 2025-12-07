@@ -7,7 +7,7 @@ Extracts images from EPUB comic files and reorganizes them into properly-ordered
 - **Smart Image Extraction**: Parses XHTML files within the EPUB and extracts image references from both standard `<img>` tags and SVG `<image>` elements
 - **Spine-Based Ordering**: Uses the EPUB manifest and spine to determine correct page order, respecting the publisher's intended reading sequence
 - **Duplicate Detection**: Uses MD5 file hashing to detect and skip duplicate first pages that match the cover image
-- **(WIP) Metadata Preservation**: Automatically generates ComicInfo.xml with extracted title, publisher, creator, publication date, and other metadata from the EPUB
+- **(WIP) Metadata Preservation**: Automatically generates ComicInfo.xml with extracted title, publisher, creator, publication date, and other metadata from the EPUB. This needs further work and is not currently functional.
 
 ## Tested Sources
 
