@@ -1,2 +1,2 @@
 @echo off
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<FolderPathToPS1>\ComicEpubToCBZ.ps1" %*
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0ComicEpubToCBZ.ps1" %*
